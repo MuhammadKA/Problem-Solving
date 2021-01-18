@@ -2,6 +2,8 @@
 // Average: O(N^2) time | O(1) space
 // Worst: O(N^2) time | O(1) space
 
+// After the first iteration we have the last number 
+// in the array in its final correct position
 #include <vector>
 using namespace std;
 
