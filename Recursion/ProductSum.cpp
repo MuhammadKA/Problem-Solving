@@ -1,17 +1,18 @@
 // O(n) time | O(d) space - where n is the total number of elements in the
 // array, including sub-elements, and d is the greatest depth of "special"
 // arrays in the array
+// so [5, 2, [7, -1], 3, [6, [-13, 8], 4]] => is O(12) time | O(3) space
 #include <any>
 #include <vector>
 
 using namespace std;
 
 // Tip: You can use el.type() == typeid(vector<any>) to check whether an item is
-//      a list or an integer.
+// a list or an integer.
 // If you know an element of the array is vector<any> you can cast it using:
-//      any_cast<vector<any>>(element)
+//     any_cast<vector<any>>(element)
 // If you know an element of the array is an int you can cast it using:
-//      any_cast<int>(element)
+//     any_cast<int>(element)
 int productSum(vector<any> array, int multiplier = 1) {
   // Write your code here.
   int sum = 0;
