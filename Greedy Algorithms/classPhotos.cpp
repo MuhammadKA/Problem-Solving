@@ -4,8 +4,8 @@ using namespace std;
 // O(nlog(n)) time | O(1) space
 bool classPhotos(vector<int> redShirtHeights, vector<int> blueShirtHeights) {
   // Write your code here.
-  sort(redShirtHeights.begin(), redShirtHeights.end(), greater<int>());
-  sort(blueShirtHeights.begin(), blueShirtHeights.end(), greater<int>());
+  sort(redShirtHeights.begin(), redShirtHeights.end());
+  sort(blueShirtHeights.begin(), blueShirtHeights.end());
 
   string shirtColorInFirstRow =
       redShirtHeights[0] > blueShirtHeights[0] ? "RED" : "BLUE";
