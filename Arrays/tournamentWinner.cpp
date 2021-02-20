@@ -4,6 +4,7 @@ using namespace std;
 
 const int HOME_TEAM_WON = 1;
 
+// O(n) time | O(k) space - k is the number of teams
 void updateScores(string team, int points, unordered_map<string, int> &scores);
 
 string tournamentWinner(vector<vector<string>> competitions,
