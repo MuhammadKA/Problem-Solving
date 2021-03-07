@@ -57,8 +57,6 @@ int hourglassSum(vector<vector<int>> arr) {
     currentSum = arr[row][col] + arr[row][col + 1] + arr[row][col + 2] +
                  arr[row + 1][col + 1] + arr[row + 2][col] +
                  arr[row + 2][col + 1] + arr[row + 2][col + 2];
-    std::cout << "row:" << row << " "
-              << "col:" << col << " Sum:" << currentSum << std::endl;
     result.push_back(currentSum);
     currentSum = 0;
     col++;
