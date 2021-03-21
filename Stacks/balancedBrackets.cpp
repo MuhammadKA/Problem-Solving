@@ -23,3 +23,11 @@ bool balancedBrackets(string str) {
   }
   return stack.size() == 0;
 }
+
+
+/*
+Here we have 3 corner cases to return false:
+1- When we have a closing bracket but the stack doesn't contain any opening brackets
+2- When we have a closing bracket that doesn't match the opening bracket on the top of the stack
+3- When we finish traversing the whole string and we still have un popped opening brackets on the stack
+*/
