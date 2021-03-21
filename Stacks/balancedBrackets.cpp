@@ -24,7 +24,6 @@ bool balancedBrackets(string str) {
   return stack.size() == 0;
 }
 
-
 /*
 Here we have 3 corner cases to return false:
 1- When we have a closing bracket but the stack doesn't contain any opening brackets
